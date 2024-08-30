@@ -16,7 +16,7 @@ import com.learning.tipcalculator.ui.theme.TipCalculatorTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+        //enableEdgeToEdge()
         setContent {
             HomeScreen()
         }

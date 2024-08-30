@@ -14,6 +14,7 @@ val colorTopBar = Color(0xFF2196F3)
 val colorSliderActive = Color(0xFF00BCD4)
 val colorSliderInactive = Color(0xFFCDCDCE)
 val colorSliderThumb = Color(0xFF687AE2)
+val colorBackGround = Color(0xFF03136B)
 
 val remarkBad = Color(0xFF920000)
 val remarkOk = Color(0xFFE0287E)

@@ -26,6 +26,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -160,6 +161,7 @@ fun HomeScreen(){
                     fontSize = sizeSmallText,
                     color = Utils.getColorByRemark(tipRemark),
                     textAlign = TextAlign.Center,
+                    fontWeight = FontWeight.Bold,
                     modifier = Modifier
                         .fillMaxWidth()
                         .wrapContentHeight()
@@ -186,5 +188,23 @@ fun HomeScreen(){
 
             }
         }
+
+        //Footer
+        val footer = createRef()
+
+        Text(text = "Made for Learning by Abir Hasan",
+            fontSize = sizeInputText,
+            textAlign = TextAlign.Center,
+            fontWeight = FontWeight.W300,
+            modifier = Modifier
+                .constrainAs(footer){
+                    bottom.linkTo(parent.bottom)
+                    start.linkTo(parent.start)
+                    end.linkTo(parent.end)
+                }
+                .fillMaxWidth()
+                .padding(defaultPadding)
+        )
+
     }
 }
